@@ -17,7 +17,7 @@ function App() {
 
     const fetchPokemons = async () => {
       const res = await axios.get(
-        'https://pokeapi.co/api/v2/pokemon',
+        'https://pokeapi.co/api/v2/pokemon?limit=25',
       )
       const { results } = res.data
 

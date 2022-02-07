@@ -24,9 +24,9 @@ export default function SearchPokemon(props) {
         <div className="k-primary">
             <form onSubmit={search}>
                 <Paper elevation={0} >
-                    <TextField name='nombre' onChange={handleInputChange} fullWidth label="Filtar pokemons por nombre" id="fullWidth" />
+                    <TextField name='nombre' onChange={handleInputChange} fullWidth label="Filtar pokemons por nombre . Ejemplo 'charmander'" id="fullWidth" />
                 </Paper>
-                <Box style={{textAlign:'left', color:'#5c3613'}}>Presione enter para realizar busqueda</Box>
+                <Box style={{textAlign:'left', color:'#5c3613'}}>Presione enter para realizar busqueda ."</Box>
             </form>
         </div>
     );
