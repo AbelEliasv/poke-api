@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.k-primary {
+  background-color: #f4dc26
+}
+
+.k-secundary {
+  background-color: #e92929
+}
+
+
+/* 
+  OTHERS COLORS
+  #5c3613	
+  #000000
+  #ffe62d 
+*/
