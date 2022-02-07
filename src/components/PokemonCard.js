@@ -5,14 +5,21 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Box, CardActionArea, } from '@mui/material';
 import Chip from '@mui/material/Chip';
+import { useNavigate } from 'react-router-dom';
+
 export default function PokemonCard({ pokemon }) {
     const { data } = pokemon
     const { abilities } = data
+    const navigate = useNavigate();
+    
 
+    function onClickPokemon(params) {
+        navigate("/pokemon/"+data.id);
+    }
     return (
 
         <Card sx={{ maxWidth: 300 }}>
-            <CardActionArea >
+            <CardActionArea onClick={onClickPokemon}>
                 <Box style={{ background: "#efefef" }}>
                     <img src={data.sprites.front_default} height="150"
                         width="150"></img>

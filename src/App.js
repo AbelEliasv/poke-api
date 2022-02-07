@@ -7,6 +7,7 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+import PokemonsDetailPage from './pages/PokemonDetailPage';
 
 function App() {
 
@@ -50,6 +51,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<PokemonsPage pokemons={pokemons} pokemonsSearch={pokemonsSearch} onEnterSearch={handleSearch} ></PokemonsPage>} />
+        </Routes>
+        <Routes>
+          <Route path="/pokemon/:id" element={<PokemonsDetailPage></PokemonsDetailPage>} />
         </Routes>
       </Router>
     </div>
